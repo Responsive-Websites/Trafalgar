@@ -1,0 +1,44 @@
+// font colors
+$fontBaseColor: #7d7987;
+$fontBoldColor: #000000;
+$fontWhiteColor: #ffffff;
+$fontSubWhiteColor: rgba(255, 255, 255, 0.9);
+
+// base colors
+$blueColor: #458ff6;
+$whiteColor: #ffffff;
+$baseGradient: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
+$subGradient: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+
+//buttons
+@mixin button($backgroundColor, $fontColor) {
+  min-height: 56px;
+  font-size: 18px;
+  line-height: 333%;
+  color: $fontColor;
+  background-color: $backgroundColor;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 55px;
+  padding: 0px 43px;
+
+  transition: 0.5s;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 117%;
+  color: $fontBoldColor;
+  font-weight: 700;
+  @media screen and (max-width: 992px) {
+    font-size: 40px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 35px;
+  }
+  @media screen and (max-width: 576px) {
+    font-size: 30px;
+  }
+}
