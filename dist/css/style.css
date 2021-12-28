@@ -391,6 +391,10 @@ body._lock {
   margin-top: 170px;
 }
 
+.main__customers {
+  margin-top: 240px;
+}
+
 .heading__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -717,6 +721,117 @@ body._lock {
   background: url("../img/icons/arrow.svg") 10px 3px no-repeat;
 }
 
+.customers__body {
+  border-radius: 24px;
+  background: -o-linear-gradient(241.82deg, #67c3f3 9.05%, #5a98f2 76.74%);
+  background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
+  padding: 64px 118px;
+}
+
+.customers__label {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.customers__map {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.customers__arrow-left {
+  margin-right: 90px;
+}
+
+.customers__slider {
+  margin-top: 5px;
+}
+
+.customers__arrow-right {
+  margin-left: 90px;
+}
+
+.lite-line {
+  text-align: center;
+}
+
+.customer__info {
+  margin-top: 66px;
+}
+
+.info-person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info-person__about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  padding-right: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info-person__image {
+  margin-right: 29px;
+  max-width: 141px;
+}
+
+.info-person__image img {
+  width: 100%;
+}
+
+.info-person__name {
+  font-size: 22px;
+  line-height: 218%;
+  color: #ffffff;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.info-person__job {
+  font-size: 18px;
+  line-height: 267%;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: -13px;
+}
+
+.info-person__text {
+  max-width: 420px;
+  font-size: 19px;
+  line-height: 158%;
+  color: #ffffff;
+  font-weight: 400;
+}
+
 @media screen and (max-width: 1461px) {
   .row-items__image {
     max-width: 650px;
@@ -757,6 +872,31 @@ body._lock {
 
   .apps-image {
     margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 1091px) {
+  .customers__body {
+    padding: 34px 48px;
+  }
+
+  .customer__info {
+    margin-top: 30px;
+  }
+
+  .info-person {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+
+  .info-person__about {
+    margin-bottom: 30px;
+  }
+
+  .info-person__text {
+    text-align: center;
   }
 }
 
@@ -823,6 +963,10 @@ body._lock {
     margin-top: 140px;
   }
 
+  .main__customers {
+    margin-top: 160px;
+  }
+
   .heading__text {
     font-size: 20px;
   }
@@ -849,6 +993,18 @@ body._lock {
 
   .item-service__text {
     font-size: 16px;
+  }
+
+  .info-person__name {
+    font-size: 20px;
+  }
+
+  .info-person__job {
+    font-size: 17px;
+  }
+
+  .info-person__text {
+    font-size: 17px;
   }
 }
 
@@ -1044,6 +1200,10 @@ body._lock {
     margin-top: 80px;
   }
 
+  .main__customers {
+    margin-top: 90px;
+  }
+
   .heading__text {
     font-size: 18px;
   }
@@ -1079,6 +1239,18 @@ body._lock {
 
   .item-service__text {
     font-size: 15px;
+  }
+
+  .info-person__name {
+    font-size: 18px;
+  }
+
+  .info-person__job {
+    font-size: 16px;
+  }
+
+  .info-person__text {
+    font-size: 16px;
   }
 }
 
@@ -1136,6 +1308,10 @@ body._lock {
     margin-top: 60px;
   }
 
+  .main__customers {
+    margin-top: 60px;
+  }
+
   .heading__text {
     font-size: 16px;
   }
@@ -1166,5 +1342,59 @@ body._lock {
 
   .item-service__text {
     font-size: 14px;
+  }
+
+  .info-person__name {
+    font-size: 17px;
+  }
+
+  .info-person__job {
+    font-size: 15px;
+  }
+
+  .info-person__text {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 539px) {
+  .customers__arrow-left {
+    margin-right: 50px;
+  }
+
+  .customers__arrow-right {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 429px) {
+  .info-person__image {
+    margin-right: 19px;
+  }
+}
+
+@media screen and (max-width: 393px) {
+  .customers__body {
+    padding: 24px 28px;
+  }
+
+  .info-person__about {
+    padding-right: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    text-align: center;
+  }
+
+  .info-person__image {
+    margin-right: 0px;
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .customers__label {
+    font-size: 23px;
   }
 }
