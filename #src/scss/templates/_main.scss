@@ -21,6 +21,25 @@
     }
   }
   &__services {
+    position: relative;
+  }
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    @media screen and (max-width: 785px) {
+      display: none;
+    }
+  }
+  .background-image2 {
+    position: absolute;
+    top: 0;
+    left: 83%;
+    z-index: -3;
+    @media screen and (max-width: 785px) {
+      display: none;
+    }
   }
   &__providers {
     margin-top: 220px;
@@ -60,6 +79,7 @@
   }
   &__latest {
     margin-top: 220px;
+    position: relative;
     @media screen and (max-width: 992px) {
       margin-top: 160px;
     }
@@ -71,7 +91,11 @@
     }
   }
 }
-
+.dots {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 // ============ heading =============
 
 .heading {
@@ -176,6 +200,21 @@
   &__container {
     max-width: 1247px;
   }
+  &__dots {
+    position: absolute;
+    top: 600px;
+    left: 1450px;
+    z-index: -2;
+    @media screen and (max-width: 1743px) {
+      left: 1250px;
+    }
+    @media screen and (max-width: 1743px) {
+      left: 1050px;
+    }
+    @media screen and (max-width: 1149px) {
+      display: none;
+    }
+  }
   &__body {
   }
   &__heading {
@@ -259,7 +298,7 @@
     padding: 0px 51px;
     border-radius: 55px;
 
-    transition: 0.5s;
+    transition: 0.3s;
     &:hover {
       @include button($blueColor, $whiteColor);
       outline: none;
@@ -356,14 +395,25 @@
     text-align: center;
   }
   &__image {
+    & img {
+      width: 650px;
+    }
     @media screen and (max-width: 1461px) {
-      max-width: 650px;
+      & img {
+        width: 500px;
+      }
+    }
+    @media screen and (max-width: 937px) {
+      & img {
+        width: 400px;
+      }
+    }
+
+    @media screen and (max-width: 851px) {
+      max-width: 350px;
       & img {
         width: 100%;
       }
-    }
-    @media screen and (max-width: 851px) {
-      max-width: 350px;
     }
   }
   &__info {
@@ -390,7 +440,7 @@
     outline: 1.4px solid #458ff6;
     padding: 0px 51px;
     border-radius: 55px;
-    transition: 0.5s;
+    transition: 0.3s;
     &:hover {
       @include button($blueColor, $whiteColor);
       outline: none;
@@ -457,7 +507,7 @@
   }
 }
 .download-button {
-  transition: 0.5s;
+  transition: 0.3s;
   &:hover {
     .download-link {
       &:after {
@@ -484,6 +534,38 @@
 // ============ customers ===========
 
 .customers {
+  position: relative;
+  &__dots1 {
+    top: -20px;
+    left: 78%;
+    @media screen and (max-width: 1743px) {
+      left: 1200px;
+    }
+    @media screen and (max-width: 1149px) {
+      left: 1000px;
+    }
+    @media screen and (max-width: 975px) {
+      display: none;
+    }
+  }
+  &__dots2 {
+    top: 290px;
+    left: 260px;
+    z-index: -2;
+
+    @media screen and (max-width: 1839px) {
+      left: 200px;
+    }
+    @media screen and (max-width: 1713px) {
+      left: 120px;
+    }
+    @media screen and (max-width: 1553px) {
+      left: 40px;
+    }
+    @media screen and (max-width: 1291px) {
+      display: none;
+    }
+  }
   &__container {
   }
   &__body {
@@ -636,6 +718,14 @@
 // ============ latest ==============
 
 .latest {
+  &__dots {
+    z-index: -2;
+    left: 270px;
+    top: 150px;
+    @media screen and (max-width: 1305px) {
+      display: none;
+    }
+  }
   &__container {
   }
   &__body {
@@ -690,7 +780,7 @@
     font-weight: 700;
     font-size: 18px;
 
-    transition: 0.5s;
+    transition: 0.3s;
     &:hover {
       @include button($blueColor, $whiteColor);
       padding: 0px 66px;

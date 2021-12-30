@@ -43,7 +43,6 @@
     &:hover {
       color: $fontBoldColor;
       opacity: 1;
-      font-weight: 700;
     }
   }
   &__link {
@@ -128,7 +127,7 @@
     &__item {
       &:not(:last-child) {
         margin-right: 0px;
-        margin-bottom: 25px;
+        margin-bottom: 45px;
       }
       font-size: 30px;
       line-height: 127%;
